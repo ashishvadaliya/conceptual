@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remnant</title>
+
+    <meta name="description" content="" />
+
+    <meta name="keywords" content="" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="" />
+
+    <!-- Open Graph (Facebook / LinkedIn preview) -->
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:image" content="" />
+
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+
+    <!-- Robots -->
+    <meta name="robots" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <!-- Google Fonts: Inter + Chakra Petch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Chakra+Petch:wght@300&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="w-100">
+        <div class="container d-flex justify-content-between align-items-center header w-full">
+            <a href="#">
+                <img src="images/logo-conceptual.svg" alt="" class="header-logo">
+            </a>
+            <div class="header-menu-item d-flex ">
+                <ul class="navbar-nav d-flex flex-row justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link fs-18" aria-current="page" href="#solutions">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-18" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-18" href="#about">About</a>
+                    </li>
+                </ul>
+                <button class="btn">
+                    START GROWING
+                    <img src="images/icn-right-arrow.svg" alt="">
+                </button>
+            </div>
+            <button class="hamburger" id="openMenu">
+                <img src="images/header-menu-logo.svg" alt="">
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <button class="close-menu" id="closeMenu">✕</button>
+
+        <ul class="mobile-nav">
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+
+        <div class="mobile-buttons">
+            <button class="btn">
+                START GROWING
+                <img src="images/icn-right-arrow.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section-bg">
+        <div
+            class="container hero-section w-full d-flex flex-column flex-md-row justify-content-start align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-start hero-main-content">
+                <img src="images/icn_hero-l-shape.svg" alt="" class="leaf-img">
+                <div class="hero-content d-flex flex-column justify-content-center align-items-start">
+                    <div class="title fs-80"><span>Grow faster</span> than you thought was possible</div>
+                    <span class="desc fs-20">We help teams align systems, channels, data, and decisions into a single,
+                        powerful
+                        growth engine.</span>
+                </div>
+                <div
+                    class="hero-button d-flex flex-column flex-md-row justify-content-start align-items-start align-items-md-center">
+                    <button class="btn">
+                        START GROWING
+                        <img src="images/icn-right-arrow.svg" alt="">
+                    </button>
+                    <button class="btn-secondary fs-14">
+                        Optimizing $XXk+/day in paid spend
+                    </button>
+                </div>
+            </div>
+
+            <div class="row grid-border">
+
+                <!-- CARD 1 -->
+                <div class="col-6 col-md-6">
+                    <div class="ui-card">
+                        <img src="images/hero_img-1.svg" alt="" />
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-6 col-md-6">
+                    <div class="ui-card">
+                        <img src="images/hero_img-2.svg" alt="" />
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-6 col-md-6">
+                    <div class="ui-card">
+                        <img src="images/hero_img-3.svg" alt="" />
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="col-6 col-md-6">
+                    <div class="ui-card">
+                        <img src="images/hero_img-4.svg" alt="" />
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="col-6 col-md-6">
+                    <div class="ui-card">
+                        <img src="images/hero_img-5.svg" alt="" />
+                    </div>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="col-6 col-md-6">
+                    <div class="ui-card">
+                        <img src="images/hero_img-6.svg" alt="" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- trusted Section -->
+    <section class="container trusted-logo d-flex flex-column justify-content-center align-items-center">
+        <div class="title fs-14">
+            The trusted growth agency for for world-class start-ups, scale-ups, and beyond
+        </div>
+        <div class="logo-slider trusted-logos">
+            <div class="logo-track">
+                <img src="images/Perplexity_AI_logo-logo.svg" alt="">
+                <img src="images/superhuman-logo.svg" alt="">
+                <img src="images/cursor-logo.svg" alt="">
+                <img src="images/console-logo.svg" alt="">
+                <img src="images/teal-logo.svg" alt="">
+                <img src="images/spruce-logo.svg" alt="">
+                <img src="images/gpt-zero-logo.svg" alt="">
+
+                <img src="images/Perplexity_AI_logo-logo.svg" alt="">
+                <img src="images/superhuman-logo.svg" alt="">
+                <img src="images/cursor-logo.svg" alt="">
+                <img src="images/console-logo.svg" alt="">
+                <img src="images/teal-logo.svg" alt="">
+                <img src="images/spruce-logo.svg" alt="">
+                <img src="images/gpt-zero-logo.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Chart -->
+    <section class="section chart" id="solutions">
+        <img src="images/chart-section-bg-glow-img.png" alt="" class="chart-glow">
+        <div class="container content text-center">
+
+            <h2 class="title fs-60"><span>Progress</span> should be visible</h2>
+            <p class="subtitle fs-20">
+                Every client starts with a different problem. We methodically pursue
+                the best possible system to solve it—through research, experimentation,
+                and iteration.
+            </p>
+
+            <!-- Tabs -->
+            <ul class="nav nav-tabs" id="chartTabs">
+                <li class="nav-item">
+                    <button class="nav-link active" data-chart="perplexity">
+                        <img src="images/Perplexity_AI_logo-logo.svg" alt="" class="perplexity">
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-chart="superhuman">
+                        <img src="images/superhuman-logo.svg" alt="" class="superhuman">
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-chart="cursor">
+                        <img src="images/cursor-logo.svg" alt="" class="cursor">
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Chart -->
+            <div class="w-100 chart-box-main">
+
+                <!-- Border Corner -->
+                <img src="images/performance-marketing-border-top-corner.svg" alt="" class="top-left">
+                <img src="images/performance-marketing-border-top-corner.svg" alt="" class="top-right">
+                <img src="images/performance-marketing-border-bottom-corner.svg" alt="" class="bottom-left">
+                <img src="images/performance-marketing-border-bottom-corner.svg" alt="" class="bottom-right">
+
+
+                <div class="chart-box w-100">
+                    <canvas id="progressChart"></canvas>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Performance Marketing Services -->
+    <section class="performance-marketing-main" id="work">
+        <img src="images/performance-marketing-glow-img.png" alt="" class="glow">
+
+        <div class="container performance-marketing d-flex flex-column justify-content-center align-items-center">
+
+            <div class="content-main d-flex flex-column justify-content-center align-items-center">
+                <span class="title fs-60">Performance Marketing Services That Solve Real Growth Problems</span>
+                <span class="desc fs-20">Growth can get complex. Our experienced team builds nimble, tailored scaling
+                    systems, aligned to your
+                    goals and grounded in real operational experience.</span>
+            </div>
+
+            <div class="performance-marketing-card-main d-flex justify-content-center align-items-center">
+
+                <!-- Border Corner -->
+                <img src="images/performance-marketing-border-top-corner.svg" alt="" class="top-left">
+                <img src="images/performance-marketing-border-top-corner.svg" alt="" class="top-right">
+                <img src="images/performance-marketing-border-bottom-corner.svg" alt="" class="bottom-left">
+                <img src="images/performance-marketing-border-bottom-corner.svg" alt="" class="bottom-right">
+
+
+                <!-- Card 1 -->
+                <div class="card d-flex flex-column justify-content-center align-items-start">
+                    <span class="card-title fs-42">Signal Detection</span>
+                    <span class="card-desc fs-14">We analyze cross-channel demand signals to uncover high-intent
+                        opportunities and
+                        growth
+                        levers.</span>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card d-flex flex-column justify-content-center align-items-start">
+                    <span class="card-title fs-42">Strategy</span>
+                    <span class="card-desc fs-14">We align channels, experimentation, and metrics into a clear strategy
+                        built for sustainable growth.</span>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card d-flex flex-column justify-content-center align-items-start">
+                    <span class="card-title fs-42">Creative</span>
+                    <span class="card-desc fs-14">We design and test performance-driven creative that captures
+                        attention,
+                        communicates value, and converts.</span>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card d-flex flex-column justify-content-center align-items-start">
+                    <span class="card-title fs-42">SEO</span>
+                    <span class="card-desc fs-14">We build scalable SEO strategies that capture high-intent demand and
+                        compound organic growth over time.</span>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card d-flex flex-column justify-content-center align-items-start">
+                    <span class="card-title fs-42">Media Buying</span>
+                    <span class="card-desc fs-14">We plan, execute, and optimize paid media to drive efficient
+                        acquisition
+                        and profitable scale.</span>
+                </div>
+            </div>
+            <div>
+                <button class="btn">
+                    VIEW ALL SERVICES
+                    <img src="images/icn-right-arrow.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-main" id="about">
+        <img src="images/testimonial-glow-img.png" alt="" class="glow">
+        <div class="container testimonial d-flex flex-column justify-content-center align-items-center">
+            <div class="testimonial-content-main d-flex flex-column justify-content-center align-items-center">
+                <span class="title fs-60">65% of our clients doubled their revenue in the first 6 months</span>
+                <div class="desc-main d-flex justify-content-center align-items-center">
+                    <span class="desc fs-24">Hear it from them</span>
+                    <img src="images/icn-arrow-down.svg" alt="">
+                </div>
+            </div>
+            <div class="testimonial-card d-flex flex-column flex-md-row justify-content-center align-items-center">
+                <!-- Testimonial Card 1 -->
+                <div class="card d-flex flex-column justify-content-center align-items-start">
+                    <span class="card-title fs-14">Superhuman</span>
+                    <span class="testimonial-title fs-18">"Conceptual is a strategic and insightful partner"</span>
+                    <span class="testimonial-desc fs-14">The Conceptual squad relentlessly and patiently challenged our
+                        approach to various inbound
+                        activities, and completely changed how we think about lead generation via content marketing and
+                        automation. They also showed us a new, more effective rhythm around approaching, tracking, and
+                        nurturing prospects.</span>
+                    <div class="user-info d-flex justify-content-start align-items-center">
+                        <img src="images/user-img.svg" alt="">
+                        <div class="d-flex flex-column justify-content-center align-items-start">
+                            <span class="user-name fs-16">John S</span>
+                            <span class="user-position fs-14">Director of Growth Marketing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="card card-corner d-flex flex-column justify-content-center align-items-start">
+                    <img src="images/testimonial-2-bg-img.png" alt="" class="card-bg-img">
+                    <span class="card-title fs-14">Superhuman</span>
+                    <span class="testimonial-title fs-18">"Conceptual is a strategic and insightful partner"</span>
+                    <span class="testimonial-desc fs-14">The Conceptual squad relentlessly and patiently challenged our
+                        approach to various inbound
+                        activities, and completely changed how we think about lead generation via content marketing and
+                        automation. They also showed us a new, more effective rhythm around approaching, tracking, and
+                        nurturing prospects.</span>
+                    <div class="user-info d-flex justify-content-start align-items-center">
+                        <img src="images/user-img.svg" alt="">
+                        <div class="d-flex flex-column justify-content-center align-items-start">
+                            <span class="user-name fs-16">John S</span>
+                            <span class="user-position fs-14">Director of Growth Marketing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div class="card card-corner d-flex flex-column justify-content-center align-items-start">
+                    <img src="images/testimonial-3-bg-img.png" alt="" class="card-bg-img">
+
+                    <span class="card-title fs-14">Superhuman</span>
+                    <span class="testimonial-title fs-18">"Conceptual is a strategic and insightful partner"</span>
+                    <span class="testimonial-desc fs-14">The Conceptual squad relentlessly and patiently challenged our
+                        approach to various inbound
+                        activities, and completely changed how we think about lead generation via content marketing and
+                        automation. They also showed us a new, more effective rhythm around approaching, tracking, and
+                        nurturing prospects.</span>
+                    <div class="user-info d-flex justify-content-start align-items-center">
+                        <img src="images/user-img.svg" alt="">
+                        <div class="d-flex flex-column justify-content-center align-items-start">
+                            <span class="user-name fs-16">John S</span>
+                            <span class="user-position fs-14">Director of Growth Marketing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <section class="container footer d-flex flex-column justify-content-center align-items-center">
+        <div class="footer-contact d-flex flex-column justify-content-center align-items-start">
+            <img src="images/logo-conceptual.svg" alt="" class="footer-logo">
+            <span class="desc fs-20">A Silicon Valley performance marketing agency</span>
+            <button class="btn">
+                CONTACT US
+                <img src="images/icn-right-arrow.svg" alt="">
+            </button>
+        </div>
+        <div
+            class="footer-copyrights d-flex flex-column flex-md-row justify-content-between align-items-md-center align-items-start">
+            <span class="copyrights fs-14">© 2026 CONCEPTUAL. ALL RIGHTS RESERVED.</span>
+            <div class="condition d-flex justify-content-center align-items-center">
+                <span class="privacy fs-14">Privacy</span>
+                <span class="terms fs-14">Terms</span>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="JS/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

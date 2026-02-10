@@ -63,10 +63,10 @@
     <header class="w-100">
         <div class="container d-flex justify-content-between align-items-center header w-full">
             <a href="#">
-                <img src="images/logo-conceptual.svg" alt="" class="header-logo">
+                <img src="images/logo-conceptual.svg" alt="" class="header-logo" loading="lazy">
             </a>
             <div class="header-menu-item d-flex ">
-                <ul class="navbar-nav d-flex flex-row justify-content-center align-items-center">
+                <!-- <ul class="navbar-nav d-flex flex-row justify-content-center align-items-center">
                     <li class="nav-item">
                         <a class="nav-link fs-18" aria-current="page" href="#solutions">Solutions</a>
                     </li>
@@ -76,19 +76,19 @@
                     <li class="nav-item">
                         <a class="nav-link fs-18" href="#about">About</a>
                     </li>
-                </ul>
+                </ul> -->
                 <button class="btn">
                     START GROWING
-                    <img src="images/icn-right-arrow.svg" alt="">
+                    <img src="images/icn-right-arrow.svg" alt="" loading="lazy">
                 </button>
             </div>
-            <button class="hamburger" id="openMenu">
+            <!-- <button class="hamburger" id="openMenu">
                 <img src="images/header-menu-logo.svg" alt="">
-            </button>
+            </button> -->
         </div>
     </header>
 
-    <div class="mobile-menu" id="mobileMenu">
+    <!-- <div class="mobile-menu" id="mobileMenu">
 
         <button class="close-menu" id="closeMenu">✕</button>
 
@@ -104,14 +104,14 @@
                 <img src="images/icn-right-arrow.svg" alt="">
             </button>
         </div>
-    </div>
+    </div> -->
 
     <!-- Hero Section -->
     <section class="hero-section-bg">
         <div
             class="container hero-section w-full d-flex flex-column flex-md-row justify-content-start align-items-center">
             <div class="d-flex flex-column justify-content-center align-items-start hero-main-content">
-                <img src="images/icn_hero-l-shape.svg" alt="" class="leaf-img">
+                <img src="images/icn_hero-l-shape.svg" alt="" class="leaf-img" loading="lazy">
                 <div class="hero-content d-flex flex-column justify-content-center align-items-start">
                     <div class="title fs-80"><span>Grow faster</span> than you thought was possible</div>
                     <span class="desc fs-20">We help teams align systems, channels, data, and decisions into a single,
@@ -130,51 +130,151 @@
                 </div>
             </div>
 
-            <div class="row grid-border">
 
-                <!-- CARD 1 -->
+            <div class="row grid-border superside">
+
+                <!-- LEFT COLUMN -->
+                <div class="col-6 col-md-6">
+                    <div class="column left">
+                        <div class="track">
+
+                            <div class="card-wrap">
+                                <div class="ui-card">
+                                    <img src="images/hero_img-1.svg" alt="" loading="lazy">
+                                </div>
+                            </div>
+
+                            <div class="card-wrap">
+                                <div class="ui-card">
+                                    <img src="images/hero_img-3.svg" alt="" loading="lazy">
+                                </div>
+                            </div>
+
+                            <div class="card-wrap">
+                                <div class="ui-card">
+                                    <img src="images/hero_img-5.svg" alt="" loading="lazy">
+                                </div>
+                            </div>
+
+                            <!-- duplicate for infinite scroll -->
+                            <div class="card-wrap">
+                                <div class="ui-card">
+                                    <img src="images/hero_img-1.svg" alt="" loading="lazy">
+                                </div>
+                            </div>
+
+                            <div class="card-wrap">
+                                <div class="ui-card">
+                                    <img src="images/hero_img-3.svg" alt="" loading="lazy">
+                                </div>
+                            </div>
+
+                            <div class="card-wrap">
+                                <div class="ui-card">
+                                    <img src="images/hero_img-5.svg" alt="" loading="lazy">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN -->
+                <div class="col-6 col-md-6">
+                    <div class="column right">
+                        <div class="track">
+
+                            <div class="card-wrap">
+                                <div class="ui-card">
+                                    <img src="images/hero_img-2.svg" alt="" loading="lazy">
+                                </div>
+                            </div>
+
+                            <div class="card-wrap">
+                                <div class="ui-card">
+                                    <img src="images/hero_img-4.svg" alt="" loading="lazy">
+                                </div>
+                            </div>
+
+                            <div class="card-wrap">
+                                <div class="ui-card">
+                                    <img src="images/hero_img-6.svg" alt="" loading="lazy">
+                                </div>
+                            </div>
+
+                            <!-- duplicate -->
+                            <div class="card-wrap">
+                                <div class="ui-card">
+                                    <img src="images/hero_img-2.svg" alt="" loading="lazy">
+                                </div>
+                            </div>
+
+                            <div class="card-wrap">
+                                <div class="ui-card">
+                                    <img src="images/hero_img-4.svg" alt="" loading="lazy">
+                                </div>
+                            </div>
+
+                            <div class="card-wrap">
+                                <div class="ui-card">
+                                    <img src="images/hero_img-6.svg" alt="" loading="lazy">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="row grid-border">
+
                 <div class="col-6 col-md-6">
                     <div class="ui-card">
                         <img src="images/hero_img-1.svg" alt="" />
                     </div>
                 </div>
 
-                <!-- CARD 2 -->
                 <div class="col-6 col-md-6">
                     <div class="ui-card">
                         <img src="images/hero_img-2.svg" alt="" />
                     </div>
                 </div>
 
-                <!-- CARD 3 -->
                 <div class="col-6 col-md-6">
                     <div class="ui-card">
                         <img src="images/hero_img-3.svg" alt="" />
                     </div>
                 </div>
 
-                <!-- CARD 4 -->
                 <div class="col-6 col-md-6">
                     <div class="ui-card">
                         <img src="images/hero_img-4.svg" alt="" />
                     </div>
                 </div>
 
-                <!-- CARD 5 -->
                 <div class="col-6 col-md-6">
                     <div class="ui-card">
                         <img src="images/hero_img-5.svg" alt="" />
                     </div>
                 </div>
 
-                <!-- CARD 6 -->
                 <div class="col-6 col-md-6">
                     <div class="ui-card">
                         <img src="images/hero_img-6.svg" alt="" />
                     </div>
                 </div>
 
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -186,21 +286,21 @@
         </div>
         <div class="logo-slider trusted-logos">
             <div class="logo-track">
-                <img src="images/Perplexity_AI_logo-logo.svg" alt="">
-                <img src="images/superhuman-logo.svg" alt="">
-                <img src="images/cursor-logo.svg" alt="">
-                <img src="images/console-logo.svg" alt="">
-                <img src="images/teal-logo.svg" alt="">
-                <img src="images/spruce-logo.svg" alt="">
-                <img src="images/gpt-zero-logo.svg" alt="">
+                <img src="images/Perplexity_AI_logo-logo.svg" alt="Perplexity" loading="lazy">
+                <img src="images/superhuman-logo.svg" alt="superhuman" loading="lazy">
+                <img src="images/cursor-logo.svg" alt="cursor" loading="lazy">
+                <img src="images/console-logo.svg" alt="console" loading="lazy">
+                <img src="images/teal-logo.svg" alt="teal" loading="lazy">
+                <img src="images/spruce-logo.svg" alt="spruce" loading="lazy">
+                <img src="images/gpt-zero-logo.svg" alt="gpt-zero" loading="lazy">
 
-                <img src="images/Perplexity_AI_logo-logo.svg" alt="">
-                <img src="images/superhuman-logo.svg" alt="">
-                <img src="images/cursor-logo.svg" alt="">
-                <img src="images/console-logo.svg" alt="">
-                <img src="images/teal-logo.svg" alt="">
-                <img src="images/spruce-logo.svg" alt="">
-                <img src="images/gpt-zero-logo.svg" alt="">
+                <img src="images/Perplexity_AI_logo-logo.svg" alt="" loading="lazy">
+                <img src="images/superhuman-logo.svg" alt="" loading="lazy">
+                <img src="images/cursor-logo.svg" alt="" loading="lazy">
+                <img src="images/console-logo.svg" alt="" loading="lazy">
+                <img src="images/teal-logo.svg" alt="" loading="lazy">
+                <img src="images/spruce-logo.svg" alt="" loading="lazy">
+                <img src="images/gpt-zero-logo.svg" alt="" loading="lazy">
             </div>
         </div>
     </section>
@@ -258,7 +358,7 @@
 
     <!-- Performance Marketing Services -->
     <section class="performance-marketing-main" id="work">
-        <img src="images/performance-marketing-glow-img.png" alt="" class="glow">
+        <img src="images/performance-marketing-glow-img.png" alt="" class="glow" loading="lazy">
 
         <div class="container performance-marketing d-flex flex-column justify-content-center align-items-center">
 
@@ -317,18 +417,18 @@
                         and profitable scale.</span>
                 </div>
             </div>
-            <div>
+            <!-- <div>
                 <button class="btn">
                     VIEW ALL SERVICES
                     <img src="images/icn-right-arrow.svg" alt="">
                 </button>
-            </div>
+            </div> -->
         </div>
     </section>
 
     <!-- Testimonial Section -->
     <section class="testimonial-main" id="about">
-        <img src="images/testimonial-glow-img.png" alt="" class="glow">
+        <img src="images/testimonial-glow-img.png" alt="" class="glow" loading="lazy">
         <div class="container testimonial d-flex flex-column justify-content-center align-items-center">
             <div class="testimonial-content-main d-flex flex-column justify-content-center align-items-center">
                 <span class="title fs-60">65% of our clients doubled their revenue in the first 6 months</span>
@@ -358,7 +458,7 @@
 
                 <!-- Testimonial Card 2 -->
                 <div class="card card-corner d-flex flex-column justify-content-center align-items-start">
-                    <img src="images/testimonial-2-bg-img.png" alt="" class="card-bg-img">
+                    <img src="images/testimonial-2-bg-img.png" alt="" class="card-bg-img" loading="lazy">
                     <span class="card-title fs-14">Superhuman</span>
                     <span class="testimonial-title fs-18">"Conceptual is a strategic and insightful partner"</span>
                     <span class="testimonial-desc fs-14">The Conceptual squad relentlessly and patiently challenged our
@@ -377,7 +477,7 @@
 
                 <!-- Testimonial Card 3 -->
                 <div class="card card-corner d-flex flex-column justify-content-center align-items-start">
-                    <img src="images/testimonial-3-bg-img.png" alt="" class="card-bg-img">
+                    <img src="images/testimonial-3-bg-img.png" alt="" class="card-bg-img" loading="lazy">
 
                     <span class="card-title fs-14">Superhuman</span>
                     <span class="testimonial-title fs-18">"Conceptual is a strategic and insightful partner"</span>

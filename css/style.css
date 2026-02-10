@@ -380,7 +380,7 @@ header {
 
 .hero-section .hero-content .title {
     font-weight: 200 !important;
-    color: var(--color-text-primary);
+    color: var(--color-text-white);
 }
 
 .hero-section .hero-content .desc {
@@ -400,55 +400,82 @@ header {
 }
 
 
+/* ===============================
+   GRID BORDERS
+================================ */
 .grid-border>[class*="col"] {
-    border-left: 1px solid rgba(0, 255, 255, 0.25);
-    border-right: 1px solid rgba(0, 255, 255, 0.25);
-    border-bottom: 1px solid rgba(0, 255, 255, 0.25);
+    border-left: 1px solid rgba(0, 255, 255, .25);
+    border-right: 1px solid rgba(0, 255, 255, .25);
+    border-bottom: 1px solid rgba(0, 255, 255, .25);
 }
 
-/* TOP border only for first row (first 2 cards) */
 .grid-border>[class*="col"]:nth-child(1),
 .grid-border>[class*="col"]:nth-child(2) {
-    border-top: 1px solid rgba(0, 255, 255, 0.25);
+    border-top: 1px solid rgba(0, 255, 255, .25);
 }
 
-/* remove right border duplication if needed */
-.grid-border>[class*="col"]:nth-child(2n) {
-    border-right: 1px solid rgba(0, 255, 255, 0.25);
-}
-
-/* last row cleanup (optional, keeps grid clean) */
-.grid-border>[class*="col"]:nth-last-child(-n + 2) {
-    border-bottom: 1px solid rgba(0, 255, 255, 0.25);
-}
-
+/* ===============================
+   ROW / COLUMN RESET
+================================ */
 .row {
-    margin: 0px !important;
+    margin: 0;
     max-width: 470px;
+    flex-wrap: nowrap !important;
 }
 
 .row>* {
-    margin: 0px !important;
-    padding: 7px !important;
+    padding: 0px;
 }
 
 .col-md-6 {
-    margin: 0px !important;
-    padding: 7px !important;
-    max-width: fit-content !important;
+    max-width: fit-content;
+    position: relative;
+}
+
+/* ===============================
+   COLUMN VIEWPORT
+================================ */
+.column {
+    height: 700px;
+    /* visible scroll area */
+    overflow: hidden;
+    position: relative;
+}
+
+/* ===============================
+   SCROLL TRACK
+================================ */
+.track {
+    display: flex;
+    flex-direction: column;
+}
+
+.left .track {
+    animation: scrollDown 18s linear infinite;
+}
+
+.right .track {
+    animation: scrollUp 18s linear infinite;
+}
+
+/* ===============================
+   CARD BORDER + CORNERS
+================================ */
+.card-wrap {
+    padding: 7px;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 255, 255, .25);
+
 
     background-image:
-        linear-gradient(rgba(33, 104, 125, 100) 0 0),
-        linear-gradient(rgba(33, 104, 125, 100) 0 0),
-
-        linear-gradient(rgba(33, 104, 125, 100) 0 0),
-        linear-gradient(rgba(33, 104, 125, 100) 0 0),
-
-        linear-gradient(rgba(33, 104, 125, 100) 0 0),
-        linear-gradient(rgba(33, 104, 125, 100) 0 0),
-
-        linear-gradient(rgba(33, 104, 125, 100) 0 0),
-        linear-gradient(rgba(33, 104, 125, 100) 0 0);
+        linear-gradient(rgba(33, 104, 125, 1) 0 0),
+        linear-gradient(rgba(33, 104, 125, 1) 0 0),
+        linear-gradient(rgba(33, 104, 125, 1) 0 0),
+        linear-gradient(rgba(33, 104, 125, 1) 0 0),
+        linear-gradient(rgba(33, 104, 125, 1) 0 0),
+        linear-gradient(rgba(33, 104, 125, 1) 0 0),
+        linear-gradient(rgba(33, 104, 125, 1) 0 0),
+        linear-gradient(rgba(33, 104, 125, 1) 0 0);
 
     background-size:
         5px 1px, 1px 5px,
@@ -466,14 +493,54 @@ header {
     background-repeat: no-repeat;
 }
 
-/* IMAGE */
+/* ===============================
+   CARD
+================================ */
+.ui-card {
+    width: 221px;
+    height: 221px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMAGE — NO CUTTING */
 .ui-card img {
     width: 100%;
-    max-width: 221px;
-    height: 221px;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
     display: block;
 }
+
+/* ===============================
+   KEYFRAMES (TRUE INFINITE)
+================================ */
+@keyframes scrollDown {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes scrollUp {
+    from {
+        transform: translateY(-50%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
 
 /* trusted Section */
 
@@ -487,7 +554,7 @@ header {
 
 .trusted-logo .title {
     font-weight: 200;
-    color: var(--color-text-primary);
+    color: var(--color-text-white);
     letter-spacing: -0.28px;
     line-height: 20px;
 }
@@ -563,7 +630,7 @@ header {
     text-align: center;
     font-weight: 200;
     max-width: 970px;
-    columns: var(--color-text-white);
+    color: var(--color-text-white);
 }
 
 .performance-marketing .desc {
@@ -664,7 +731,7 @@ header {
     text-align: center;
     font-weight: 200;
     max-width: 938px;
-    columns: var(--color-text-white);
+    color: var(--color-text-white);
 }
 
 .testimonial-content-main .desc-main {
@@ -855,6 +922,11 @@ header {
     position: relative;
 }
 
+.chart .content {
+    position: relative;
+    z-index: 1;
+}
+
 .chart .chart-glow {
     position: absolute;
     top: 0px;
@@ -865,13 +937,9 @@ header {
 .chart h2 {
     text-align: left;
     font-weight: 200;
-    color: var(--color-text-primary);
+    color: var(--color-text-white);
 }
 
-.chart h2 {
-    font-weight: 200;
-    color: var(--color-text-primary);
-}
 
 .chart .subtitle {
     text-align: left;
@@ -885,7 +953,7 @@ header {
 }
 
 .chart .nav-tabs {
-    margin-top: 50px;
+    margin-top: 39px;
     justify-content: flex-start !important;
 }
 
@@ -914,15 +982,19 @@ header {
     color: #fff;
 }
 
-.chart .nav-tabs .nav-link {
+/* .chart .nav-tabs .nav-link {
     border-bottom: 2px solid #00B8DB;
 }
+
+.chart .nav-tabs .nav-link.active {
+    border-bottom: none !important;
+} */
 
 .chart .nav-tabs .nav-link.active::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -1px;
+    bottom: 0px;
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg,
